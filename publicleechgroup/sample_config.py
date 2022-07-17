@@ -110,6 +110,6 @@ class Config:
     SUDO_USERS = set(
         int(x) for x in get_config(
             "SUDO_USERS",
-            should_prompt=True
+            should_prompt=False
         ).split()
     )
